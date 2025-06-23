@@ -3,13 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --v4-red: #e53e3e;
+  --v4-red-dark: #c53030;
+  --v4-green: #38a169;
+  --v4-green-dark: #2f855a;
+  --primary: #0093FF;
+  --primary-hover: #0077CC;
+  --primary-dark: #005AA3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +23,70 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom colors for v4 theme */
+.text-v4-red {
+  color: var(--v4-red);
+}
+
+.bg-v4-red {
+  background-color: var(--v4-red);
+}
+
+.hover\:bg-v4-red:hover {
+  background-color: var(--v4-red-dark);
+}
+
+.text-v4-blue {
+  color: #2563eb;
+}
+
+.bg-v4-blue {
+  background-color: #2563eb;
+}
+
+/* Primary color classes */
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.hover\:bg-primary:hover {
+  background-color: var(--primary);
+}
+
+.hover\:bg-primary-hover:hover {
+  background-color: var(--primary-hover);
+}
+
+.hover\:text-primary:hover {
+  color: var(--primary);
+}
+
+.focus\:ring-primary:focus {
+  --tw-ring-color: var(--primary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.text-v4-green {
+  color: var(--v4-green);
+}
+
+.bg-v4-green {
+  background-color: var(--v4-green);
+}
+
+.bg-v4-green-dark {
+  background-color: var(--v4-green-dark);
+}
+
+.hover\:bg-v4-green-dark:hover {
+  background-color: var(--v4-green-dark);
 }

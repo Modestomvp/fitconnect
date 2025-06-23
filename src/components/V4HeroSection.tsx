@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { COLORS } from '@/constants/colors';
 
 // --- Self-contained SVG logos for easy use ---
 
@@ -41,14 +42,14 @@ const SicoobLogo = () => (
 
 const StatCard = ({ value, text, className }: { value: string; text: string; className?: string }) => (
   <div className={`absolute bg-white/70 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 p-4 flex items-center gap-3 ${className}`}>
-    <p className="text-v4-red text-2xl lg:text-3xl font-bold whitespace-nowrap">{value}</p>
+    <p className="text-primary text-2xl lg:text-3xl font-bold whitespace-nowrap">{value}</p>
     <p className="text-gray-700 text-sm leading-tight max-w-[130px]">{text}</p>
   </div>
 );
 
 const MobileStat = ({ value, text }: { value: string; text: string }) => (
     <div className="bg-gray-50/80 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 w-full border border-gray-200/50">
-        <p className="text-v4-red text-2xl font-bold">{value}</p>
+        <p className="text-primary text-2xl font-bold">{value}</p>
         <p className="text-gray-800 text-sm">{text}</p>
     </div>
 );
@@ -73,10 +74,10 @@ const V4HeroSection = () => {
             
             {/* Navigation Buttons */}
             <div className="flex items-center gap-3">
-              <button className="px-4 py-2 text-gray-700 hover:text-v4-red transition-colors font-medium">
+              <button className="px-4 py-2 text-gray-700 hover:text-primary transition-colors font-medium">
                 Login
               </button>
-              <button className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-sm hover:shadow-md">
+              <button className="px-6 py-2 bg-primary hover:bg-primary-hover text-white font-medium rounded-lg transition-colors shadow-sm hover:shadow-md">
                 Contato
               </button>
             </div>
@@ -92,14 +93,14 @@ const V4HeroSection = () => {
           <div className="text-center lg:text-left">
             <p className="text-lg mb-4 text-gray-600">Procurando um Personal Trainer?</p>
             <h1 className="text-4xl md:text-5xl font-extrabold !leading-tight tracking-tight mb-8">
-              Com o <span className="text-v4-red font-bold">Weelo</span> você encontra, agenda e paga treinos 100% on-line, em minutos.
+              Com o <span className="text-primary font-bold">Weelo</span> você encontra, agenda e paga treinos 100% on-line, em minutos.
             </h1>
             <ul className="flex flex-col sm:flex-row gap-2 justify-center lg:justify-start items-center mb-8">
               <li className="bg-gray-100 rounded-full px-4 py-2 text-sm font-medium text-gray-700">+12 mil treinos concluídos</li>
               <li className="bg-gray-100 rounded-full px-4 py-2 text-sm font-medium text-gray-700">97% de satisfação dos alunos</li>
               <li className="bg-gray-100 rounded-full px-4 py-2 text-sm font-medium text-gray-700">Repasse em até 24h para o treinador</li>
             </ul>
-            <button className="bg-v4-green hover:bg-v4-green-dark transition-colors text-white font-bold py-4 px-12 rounded-lg text-base uppercase shadow-md hover:shadow-lg transform hover:-translate-y-0.5 mb-6">
+            <button className="bg-primary hover:bg-primary-hover transition-colors text-white font-bold py-4 px-12 rounded-lg text-base uppercase shadow-md hover:shadow-lg transform hover:-translate-y-0.5 mb-6">
               Quero meu treino agora
             </button>
             <div className="flex items-center justify-center lg:justify-start gap-4 mt-2">
